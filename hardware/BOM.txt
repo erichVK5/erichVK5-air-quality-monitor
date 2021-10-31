@@ -1,0 +1,10 @@
+Arduino Uno R3 or equivalent
+Adafruit R3 compatible data logging shield
+CR1220 battery for datalogging shield
+SD card, formatted as FAT16 or FAT32, between 32MB and 32GB
+USB cable terminating in Type B connector for Arduino Uno R3 (different termination may be needed for different arduino boards)
+5V supply/USB charger
+AM2320 sensor
+DFRobot CCS811 air quality sensor
+TM1637 based four digit, seven segment LED display
+a LobethalLutheranAirQualityShieldV1 PCB
