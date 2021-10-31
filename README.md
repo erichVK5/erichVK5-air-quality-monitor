@@ -40,4 +40,6 @@ It is recommended that the CCS811 be given a 48 hour initial burn in period and 
 
 The PCB layout can be opened in pcb-rnd, and gerbers for the shield have been provided in a zip file to allow ordering from the usual online PCB suppliers.
 
+![PCB image, front](air-quality-monitor-v1-PCB.jpg)
+
 The PCB also allows for the use of a 16 pin, 0.39" (4YSD-439AB4B-35 or similar) four digit, seven segment LED display with current limiting resistors, instead of the four pin four digit TM1637 module. A sketch supporting these displays will be uploaded in due course.
