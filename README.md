@@ -1,6 +1,8 @@
 # erichVK5-air-quality-monitor
 Open hardware and software for air quality monitoring that leverages the arduino ecosystem.
 
+![assembled board stack](images/air-quality-datalogger-assembled-board-stack.jpg)
+
 The shield and accompanying software allow the CCS811 sensor to be used to monitor CO2 and total volatile organic compounds, and the AM2320 sensor allow humidity and temperature to be recorded as well.
 
 It is expected that a low cost data logging air quality monitor will be of use in educational and community settings to provide a qualitative indication of air quality over time. In particular, CO2 levels can be a useful proxy for air turnover in built environments, and by extension, inform measures that seek to reduce the risk of persisting airborne pathogens. 
@@ -19,7 +21,9 @@ After assembling the datalogging shield's headers and inserting the battery, the
 
 Once the air quality PCB has been assembled, it can be mounted on the datalogging shield, and the sketch uploaded.
 
-After powering on, if all goes well, an initial flash screen "LLS" shuld appear, after which reading will be displayed sequentially, with new readings being taken every 10 seconds. Every three minites, cached readings are written to the SD card.
+After powering on, if all goes well, an initial flash screen "LLS" should appear, after which reading will be displayed sequentially, with new readings being taken every 10 seconds. Every three minites, cached readings are written to the SD card.
+
+![unit in operation](images/air-quality-monitor-in-operation.jpg)
 
 The unit should be powered down before inserting or removing the SD card.
 
