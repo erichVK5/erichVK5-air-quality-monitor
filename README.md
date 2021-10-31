@@ -3,9 +3,9 @@ Open hardware and software for low cost air quality monitoring that leverages th
 
 ![assembled board stack](images/air-quality-datalogger-assembled-board-stack.jpg)
 
-The shield and accompanying software allow the CCS811 sensor to be used to monitor CO2 and total volatile organic compounds, and the AM2320 sensor allow humidity and temperature to be recorded as well.
+The shield and accompanying software allow the CCS811 sensor to be used to monitor CO2 and total volatile organic compounds, and the AM2320 sensor allows humidity and temperature to be recorded as well.
 
-It is expected that a low cost data logging air quality monitor will be of use in educational and community settings to provide a qualitative indication of air quality over time. In particular, CO2 levels can be a useful proxy for air turnover in built environments, and by extension, inform measures that seek to reduce the risk of persisting airborne pathogens. 
+It is expected that a low cost data logging air quality monitor will be of use in educational and community settings to provide a qualitative indication of air quality over time. In particular, CO2 levels can be a useful proxy for air turnover in built environments, and by extension, inform measures that seek to reduce the risk of persisting airborne pathogens. The utility of CO2 as a proxy for airborne pathogen loads will be affected by sources of combustion or fermentation (i.e. processes producing CO2 in addition to people) in the indoor space, and by the use of air purifying devices, such as those circulating air through suitable filters.
 
 The shield also has provision for a TM1367 based four digit LED display to allow the display of readings.
 
@@ -40,6 +40,6 @@ It is recommended that the CCS811 be given a 48 hour initial burn in period and 
 
 The PCB layout can be opened in pcb-rnd, and gerbers for the shield have been provided in a zip file to allow ordering from the usual online PCB suppliers.
 
-![PCB image, front](air-quality-monitor-v1-PCB.jpg)
+![PCB image, front](images/air-quality-monitor-v1-PCB.jpg)
 
 The PCB also allows for the use of a 16 pin, 0.39" (4YSD-439AB4B-35 or similar) four digit, seven segment LED display with current limiting resistors, instead of the four pin four digit TM1637 module. A sketch supporting these displays will be uploaded in due course.
