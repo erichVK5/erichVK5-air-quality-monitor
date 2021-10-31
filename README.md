@@ -1,5 +1,5 @@
 # erichVK5-air-quality-monitor
-Open hardware and software for air quality monitoring that leverages the arduino ecosystem.
+Open hardware and software for low cost air quality monitoring that leverages the Arduino ecosystem.
 
 ![assembled board stack](images/air-quality-datalogger-assembled-board-stack.jpg)
 
@@ -17,22 +17,22 @@ The hardware has been tested on the Adafruit "R3 compatible" version of their da
 
 The datalogging shield requires a CR1220 battery for the real time clock, and will require a FAT16 or FAT32 formatted SD card of up between 32MB and 32GB in size.
 
-After assembling the datalogging shield's headers and inserting the battery, the shield should be mounted on the Arduino Uno R3 and the clock example code used to set the current time.
+After assembling the datalogging shield's headers and inserting the battery, the shield should be mounted on the Arduino Uno R3 and the clock example code available within the arduino library manager used to set the current time (see adafruit instructions on setting up the datalogging shield).
 
-Once the air quality PCB has been assembled, it can be mounted on the datalogging shield, and the sketch uploaded.
+Once the air quality PCB has been assembled, it can be mounted on the datalogging shield, and the air quality monitoring sketch uploaded.
 
-After powering on, if all goes well, an initial flash screen "LLS" should appear, after which reading will be displayed sequentially, with new readings being taken every 10 seconds. Every three minites, cached readings are written to the SD card.
+After reset, if all goes well, an initial flash screen "LLS" should appear, after which readings will be displayed sequentially, with new readings being taken every 10 seconds. Every three minutes, cached readings are written to the SD card.
 
 ![unit in operation](images/air-quality-monitor-in-operation.jpg)
 
 The unit should be powered down before inserting or removing the SD card.
 
-Data logs are written in CSV format, with sequential naming starting with LLSAQM01.CSV
+Data logs are written in CSV format, with sequential naming starting with LLSAQM00.CSV
 
-Temperature readings in Centigrade are preceded by "t" on the LED display
-Humidity readings in percent are preceded by "h" on the LED display
-Carbon dioxide readings in ppm are preceded by "CO2" on the LED display
-Total volatile organic compound readings in ppm are preceded by "tvoc" on the LED display
+- Temperature readings in Centigrade are preceded by "t" on the LED display
+- Humidity readings in percent are preceded by "h" on the LED display
+- Carbon dioxide readings in ppm are preceded by "CO2" on the LED display
+- Total volatile organic compound readings in ppm are preceded by "tvoc" on the LED display
 
 The code also streams results over USB as a serial device, allowing readings to be viewed as they are collected in a serial monitor in real time.
 
@@ -41,4 +41,3 @@ It is recommended that the CCS811 be given a 48 hour initial burn in period and 
 The PCB layout can be opened in pcb-rnd, and gerbers for the shield have been provided in a zip file to allow ordering from the usual online PCB suppliers.
 
 The PCB also allows for the use of a 16 pin, 0.39" (4YSD-439AB4B-35 or similar) four digit, seven segment LED display with current limiting resistors, instead of the four pin four digit TM1637 module. A sketch supporting these displays will be uploaded in due course.
-
