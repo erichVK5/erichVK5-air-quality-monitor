@@ -3,6 +3,8 @@ Open hardware and software for air quality monitoring that leverages the arduino
 
 The shield and accompanying software allow the CCS811 sensor to be used to monitor CO2 and total volatile organic compounds, and the AM2320 sensor allow humidity and temperature to be recorded as well.
 
+It is expected that a low cost data logging air quality monitor will be of use in educational and community settings to provide a qualitative indication of air quality over time. In particular, CO2 levels can be a useful proxy for air turnover in built environments, and by extension, inform measures that seek to reduce the risk of persisting airborne pathogens. 
+
 The shield also has provision for a TM1367 based four digit LED display to allow the display of readings.
 
 The PCB was designed in pcb-rnd and simplifies the connections for the TM1367 display, CCS811 sensor and AM2320 sensor to an underlying Arduino Uno R3.
@@ -13,7 +15,7 @@ The hardware has been tested on the Adafruit "R3 compatible" version of their da
 
 The datalogging shield requires a CR1220 battery for the real time clock, and will require a FAT16 or FAT32 formatted SD card of up between 32MB and 32GB in size.
 
-Afer assembling the datalogging shield's headers and inserting the battery, the shield should be mounted on the Arduino Uno R3 and the clock example code used to set the current time.
+After assembling the datalogging shield's headers and inserting the battery, the shield should be mounted on the Arduino Uno R3 and the clock example code used to set the current time.
 
 Once the air quality PCB has been assembled, it can be mounted on the datalogging shield, and the sketch uploaded.
 
@@ -34,4 +36,5 @@ It is recommended that the CCS811 be given a 48 hour initial burn in period and 
 
 The PCB layout can be opened in pcb-rnd, and gerbers for the shield have been provided in a zip file to allow ordering from the usual online PCB suppliers.
 
+The PCB also allows for the use of a 16 pin, 0.39" (4YSD-439AB4B-35 or similar) four digit, seven segment LED display with current limiting resistors, instead of the four pin four digit TM1637 module. A sketch supporting these displays will be uploaded in due course.
 
