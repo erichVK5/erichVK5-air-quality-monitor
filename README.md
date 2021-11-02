@@ -31,8 +31,8 @@ Data logs are written in CSV format, with sequential naming starting with LLSAQM
 
 - Temperature readings in Centigrade are preceded by "t" on the LED display
 - Humidity readings in percent are preceded by "h" on the LED display
-- Carbon dioxide readings in ppm are preceded by "CO2" on the LED display
-- Total volatile organic compound readings in ppm are preceded by "tvoc" on the LED display
+- Carbon dioxide readings in ppm (parts per million) are preceded by "CO2" on the LED display
+- Total volatile organic compound readings in ppb (parts per billion) are preceded by "tvoc" on the LED display
 
 The code also streams results over USB as a serial device, allowing readings to be viewed as they are collected in a serial monitor in real time.
 
