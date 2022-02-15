@@ -46,16 +46,20 @@ Here is the schematic for the shield when using the CCS811, AM2320 and TM1637 fo
 
 ![Shield schematic using TM1637 display](images/LLS-shield-TM1637-schematic-v1.png)
 
-The Adafruit Datalogging Shield is sandwiched between the sensor/display shield. For data transfers to and from the SD card, the Adafruit Datalogging Shield uses SPI on the following Arduino Uno pins:
+The Adafruit Datalogging Shield is sandwiched between the Arduino Uno and the Lobethal Lutheran School sensor/display shield PCB.
+
+For data transfers to and from the SD card, the Adafruit Datalogging Shield uses SPI on the following Arduino Uno pins:
 
 - SCK
 - MISO
 - MOSI
-- D10
+- D10 as CS (chip select)
 
 For real time clock operations, the datalogging shield also shares the i2c bus with with the CCS811 and AM2320 sensors, using the following pins:
 
-- SCL(A5)
 - SDA(A4)
+- SCL(A5)
+
+This leaves multiple pins free on the Arduino if code customisation is needed, such as for on/off signals for fans or building ventilation systems. There is ample prototyping space available on the datalogging shield for wiring of this nature, to allow pins D4 to D9, for example, to be broken out for various control signals.
 
 The PCB also allows for the use of a 16 pin, 0.39" (4YSD-439AB4B-35 or similar) four digit, seven segment LED display with current limiting resistors, instead of the four pin four digit TM1637 module. A sketch supporting these displays will be uploaded in due course.
