@@ -29,6 +29,10 @@ The unit should be powered down before inserting or removing the SD card.
 
 Data logs are written in CSV format, with sequential naming starting with LLSAQM00.CSV
 
+![data from the SD card](images/LLS-data-analysis.jpg)
+
+During operation, updated readings are displayed sequentially on the 4 digit LED display.
+
 - Temperature readings in Centigrade are preceded by "t" on the LED display
 - Humidity readings in percent are preceded by "h" on the LED display
 - Carbon dioxide readings in ppm (parts per million) are preceded by "CO2" on the LED display
