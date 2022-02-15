@@ -42,4 +42,8 @@ The PCB layout can be opened in pcb-rnd, and gerbers for the shield have been pr
 
 ![PCB image, front](images/air-quality-monitor-v1-PCB.jpg)
 
+Here is the schematic for the shield when using the CCS811, AM2320 and TM1637 four digit seven segment display
+
+![Shield schematic using TM1637 display](images/LLS-shield-TM1637-schematic-v1.png)
+
 The PCB also allows for the use of a 16 pin, 0.39" (4YSD-439AB4B-35 or similar) four digit, seven segment LED display with current limiting resistors, instead of the four pin four digit TM1637 module. A sketch supporting these displays will be uploaded in due course.
