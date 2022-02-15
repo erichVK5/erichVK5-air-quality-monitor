@@ -23,7 +23,13 @@ Once the air quality PCB has been assembled, it can be mounted on the dataloggin
 
 After reset, if all goes well, an initial flash screen "LLS" should appear, after which readings will be displayed sequentially, with new readings being taken every 10 seconds. Every three minutes, cached readings are written to the SD card.
 
-![unit in operation](images/air-quality-monitor-in-operation.jpg)
+Here is a picture showing the assembled stackup of the Arduino Uno R3, datalogging shield, and the Lobethal Lutheran School sensor/display shield, in operation: 
+
+![an assembled unit](images/assembled-LLS-air-quality-monitor.jpg)
+
+Here is a unit mounted on the wall in a classroom:
+
+![wall mounted unit](images/air-quality-monitor-in-operation.jpg)
 
 The unit should be powered down before inserting or removing the SD card.
 
