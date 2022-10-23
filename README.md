@@ -5,6 +5,10 @@ Open hardware and software for low cost air quality monitoring that leverages th
 
 The shield and accompanying software allow the CCS811 sensor to be used to monitor CO2 and total volatile organic compounds, and the AM2320 sensor allows humidity and temperature to be recorded as well.
 
+There is now a version 2 of the PCB, which offers an even lower cost build option, see https://github.com/erichVK5/erichVK5-air-quality-monitor-v2
+
+![assembled board stack](images/08-assembled-air-quality-monitor-v2.JPG)
+
 It is expected that a low cost data logging air quality monitor will be of use in educational and community settings to provide a qualitative indication of air quality over time. In particular, CO2 levels can be a useful proxy for air turnover in built environments, and by extension, inform measures that seek to reduce the risk of persisting airborne pathogens. The utility of CO2 as a proxy for airborne pathogen loads will be affected by sources of combustion or fermentation (i.e. processes producing CO2 in addition to people) in the indoor space, and by the use of air purifying devices, such as those circulating air through suitable filters.
 
 The shield also has provision for a TM1367 based four digit LED display to allow the display of readings.
