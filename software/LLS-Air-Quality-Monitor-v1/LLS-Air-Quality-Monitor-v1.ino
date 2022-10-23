@@ -117,7 +117,8 @@ const uint8_t SEG_SD[] = {
 TM1637Display display(CLK, DIO);
 Adafruit_AM2320 am2320 = Adafruit_AM2320();
 Adafruit_CCS811 ccs811;
-RTC_PCF8523 RTC;
+// RTC_DS1307 RTC; // use this for the v2 datalogging PCB
+RTC_PCF8523 RTC; // use this for the v1 datalogging PCB
 File logfile;
 
 // mathematics using unsigned long can cope with rollover
